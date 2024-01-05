@@ -4,68 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: none;
-    }
-    .nav-links{
-        background-color: aquamarine;
-        height: 10vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav-links a{
-        text-decoration: none;
-        font-size: 21px;
-        margin: 140px;
-        justify-content: space-evenly;
-        background-color: grey;
-        border: 2px solid black;
-        height: 39px;
-        width: 114px;
-        text-align: center;
-        color: white;
-        padding: 4px;
-        border-radius: 10px;
-        position: relative;
-    }
-    .container{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .box{
-        width: 260px;
-        height: 250px;
-        border: 2px solid black;
-        margin: 10px;
-        justify-content:center;
-    }
-    h1{
-        padding: 25px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #grey{
-        background-color: grey;
-    }
-    #yellow{
-        background-color: yellow;
-    }
-    #orange{
-        background-color: orange;
-    }
-    #violet{
-        background-color: violet;
-    }
-</style>
 <body>
     
     <nav class="nav-links">
@@ -84,34 +24,6 @@
     
     <h1>Try clicking on one of the colors above<br><br><span>Color activated Enjoy the new vibe</span></h1>
 
-    <script>
-        const buttons = document.querySelectorAll('.box');
-        const body = document.querySelector('body');
-
-        buttons.forEach(function (button) {
-            console.log(button);
-
-            button.addEventListener('click', function(e){
-                
-                console.log(e.target);
-
-                if(e.target.id === 'grey'){
-                    body.style.backgroundColor = 'grey'
-                }
-
-                if(e.target.id === 'yellow'){
-                    body.style.backgroundColor = 'yellow'
-                }
-
-                if(e.target.id === 'orange'){
-                    body.style.backgroundColor = 'orange'
-                }
-
-                if(e.target.id === 'violet'){
-                    body.style.backgroundColor = 'violet'
-                }
-            })
-        })
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
